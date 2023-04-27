@@ -11,7 +11,7 @@ Instruções:
 
 1. Fazer o download do repositório através do comando:
 
-`$ git clone`
+```$ git clone https://github.com/Cybermedes/banco-dados-docker.git```
 
 2. Usar o comando para constuir a imagem:
 
@@ -29,9 +29,10 @@ Instruções:
 
 `$ mysql -u root -p`
 
-6. Usar o comando para poder visualizar o banco de dados. O banco de dados já adicionado tem o nome de *loja_mec*. O comando `show dtabases` deve ter o seguinte *output*.
+6. Usar o comando para poder visualizar o banco de dados. O banco de dados já adicionado tem o nome de *loja_mec*. O comando `show databases;` deve ter o seguinte *output*.
 
-`mysql> show databases;
+
+```mysql> show databases;
 +--------------------+
 | Database           |
 +--------------------+
@@ -40,17 +41,20 @@ Instruções:
 | mysql              |
 | performance_schema |
 | sys                |
-+--------------------+`
++--------------------+
+```
 
-7. Usar o comando `use loja_mec` para selecionar o banco de dados
+7. Usar o comando `use loja_mec;` para selecionar o banco de dados
 
-8. O comando `show tables` para mostrar as tabelas contidas no database e deve mostrar o seguinte *output*:
+8. O comando `show tables;` para mostrar as tabelas contidas no database e deve mostrar o seguinte *output*:
 
-`mysql> show tables;
+```
+mysql> show tables;
 +--------------------+
 | Tables_in_loja_mec |
 +--------------------+
 | funcionarios       |
 | produtos           |
 | salarios           |
-+--------------------+`
++--------------------+
+```
