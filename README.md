@@ -12,31 +12,31 @@ Instruções:
 1. Fazer o download do repositório através do comando:
 
 ```
-$ git clone https://github.com/Cybermedes/banco-dados-docker.git
+git clone https://github.com/Cybermedes/banco-dados-docker.git
 ```
 
 2. Usar o comando dentro da pasta `MySQL` para constuir a imagem:
 
 ```
-$ sudo docker build -t banco-mysql-docker:0.1.0 .
+sudo docker build -t banco-mysql-docker:0.1.0 .
 ```
 
 3. Usar o comando para criar um contêiner e rodá-lo em segundo plano:
 
 ```
-$ docker run --name Dados-mysql -d banco-mysql-docker-mysql-docker:0.1.0
+docker run --name Dados-mysql -d banco-mysql-docker-mysql-docker:0.1.0
 ```
 
 4. Para ter acesso ao shell dentro do contêiner e acessar o MySQL, usar o commando:
 
 ```
-$ docker exec -it Dados-mysql bash
+docker exec -it Dados-mysql bash
 ```
 
 5. Para iniciar o MySQL como o usuário *root* (a senha de acesso do *root* é `senha123`):
 
 ```
-$ mysql -u root -p
+mysql -u root -p
 ```
 
 6. Usar o comando para poder visualizar o banco de dados. O comando `SHOW DATABASES;` deve ter `loja_mec` entre os resultados.
